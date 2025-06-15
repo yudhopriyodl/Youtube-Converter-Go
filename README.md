@@ -16,25 +16,25 @@ This is a Go implementation of a YouTube-to-MP3/MP4 converter API, designed to m
 
     ```bash
     git clone https://github.com/yudhopriyodl/Youtube-Converter-Go
-    cd youtube-converter-go
+    cd Youtube-Converter-Go
     ```
 
 2. **Build the application:**
 
     ```bash
-    go build -o youtube-converter .
+    go build -o Youtube-Converter-Go .
     ```
 
 3. **Run the application:**
 
     ```bash
-    ./youtube-converter
+    ./Youtube-Converter-Go
     ```
 
     The API will start on `http://localhost:8080` by default. You can change the port by setting the `PORT` environment variable:
 
     ```bash
-    PORT=3000 ./youtube-converter
+    PORT=3000 ./Youtube-Converter-Go
     ```
 
 ## 💡 Usage
