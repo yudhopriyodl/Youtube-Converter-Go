@@ -22,7 +22,7 @@ This is a Go implementation of a YouTube-to-MP3/MP4 converter API, designed to m
 2. **Build the application:**
 
     ```bash
-    go build -o Youtube-Converter-Go .
+    go build -o Youtube-Converter-Go
     ```
 
 3. **Run the application:**
