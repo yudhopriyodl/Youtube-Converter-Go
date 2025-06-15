@@ -15,11 +15,9 @@ This is a Go implementation of a YouTube-to-MP3/MP4 converter API, designed to m
 1. **Clone the repository (or create the files manually):**
 
     ```bash
-    git clone https://github.com/your-repo/youtube-converter-go.git
+    git clone https://github.com/yudhopriyodl/Youtube-Converter-Go
     cd youtube-converter-go
     ```
-
-    (Note: Replace `https://github.com/your-repo/youtube-converter-go.git` with your actual repository URL if you host it.)
 
 2. **Build the application:**
 
@@ -57,7 +55,7 @@ The API exposes a single endpoint: `/convert`.
 
 ### 📄 Sample HTTP Requests and Expected JSON Responses
 
-**1. 🎵 Convert to MP3:**
+**1. Convert to MP3:**
 
 **Request:**
 
@@ -76,7 +74,7 @@ GET http://localhost:8080/convert?type=mp3&url=https://www.youtube.com/watch?v=d
 }
 ```
 
-**2. 🎬 Convert to MP4:**
+**2. Convert to MP4:**
 
 **Request:**
 
@@ -95,7 +93,7 @@ GET http://localhost:8080/convert?type=mp4&url=https://www.youtube.com/watch?v=d
 }
 ```
 
-**3. ❌ Error - Missing Parameter:**
+**3. Error - Missing Parameter:**
 
 **Request:**
 
@@ -106,7 +104,7 @@ GET http://localhost:8080/convert?type=mp3
 **Expected HTTP Status:** `400 Bad Request`
 **Expected Response Body:** `Missing 'url' or 'type' parameter`
 
-**4. 🚫 Error - Invalid Type:**
+**4. Error - Invalid Type:**
 
 **Request:**
 
@@ -117,7 +115,7 @@ GET http://localhost:8080/convert?type=webm&url=https://www.youtube.com/watch?v=
 **Expected HTTP Status:** `400 Bad Request`
 **Expected Response Body:** `Invalid 'type' parameter. Must be 'mp3', 'mp4', or 'merged'.`
 
-**5. ⚠️ Error - Conversion Service Failure (e.g., invalid YouTube URL or video not found):**
+**5. Error - Conversion Service Failure (e.g., invalid YouTube URL or video not found):**
 
 **Request:**
 
